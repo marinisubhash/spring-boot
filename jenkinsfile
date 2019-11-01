@@ -19,7 +19,7 @@ node {
       }
    }
      stage ('Deploy') {
-           sh 'cp target/*.war Users/Shared/Tomcat.47/webapps/'
+           sh 'cp target/*.war Users/Shared/Tomcat/webapps/'
             }
    stage('Results') {
       archiveArtifacts 'target/*.war'
